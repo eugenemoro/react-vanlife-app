@@ -1,0 +1,43 @@
+main.van-details-page.content {
+  display: flex;
+  justify-content: center;
+}
+.van-details {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  img {
+    max-width: 490px;
+    max-height: 490px;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 1em;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  p.van-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  p.van-price::after {
+    content: '/day';
+    font-size: 1.25rem;
+  }
+  button {
+    margin-top: 2em;
+    border: none;
+    background-color: #FF8C38;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1em 7em;
+  }
+}

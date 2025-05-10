@@ -1,0 +1,86 @@
+div.vans-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  .filter-buttons {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+div.all-vans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  padding: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+div.van-tile {
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  img {
+    min-width: 230px;
+    min-height: 230px;
+    border-radius: 5px;
+  }
+  div.van-tile-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  p.van-price {
+    position: relative;
+  }
+  p.van-price::after {
+    content: '/day';
+    font-size: 0.825rem;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    bottom: -50%;
+
+  }
+}
+div.van-type {
+  margin-top: .5em;
+}
+
+div.van-type,
+button.van-filter-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4D4D4D;
+  background-color: #FFEAD0;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  width: fit-content;
+  text-transform: capitalize;
+}
+div.simple,
+button.simple:hover,
+button.simple.active {
+  color: #FFEAD0;
+  background-color: #E17654;
+}
+div.luxury,
+button.luxury:hover,
+button.luxury.active {
+  color: #FFEAD0;
+  background-color: #161616;
+}
+div.rugged,
+button.rugged:hover,
+button.rugged.active {
+  color: #FFEAD0;
+  background-color: #115E59;
+}

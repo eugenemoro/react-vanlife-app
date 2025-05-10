@@ -1,0 +1,16 @@
+main.dashboard nav > a {
+  font-weight: 500;
+}
+
+main.dashboard nav > a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main.dashboard nav > a:hover {
+  text-decoration: underline;
+}
+
+div.host-layout-content {
+  margin: 3em 0;
+}

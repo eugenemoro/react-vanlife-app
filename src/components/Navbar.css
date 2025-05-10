@@ -1,0 +1,31 @@
+img {
+  max-height: 1.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #FFF7ED;
+  min-height: 100px;
+  padding: 1.5em;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+  a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+  a:hover,
+  a.active {
+    text-decoration: underline;
+    color: #161616;
+  }
+  a.active {
+    font-weight: bold;
+  }
+}
+
